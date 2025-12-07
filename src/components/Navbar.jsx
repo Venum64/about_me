@@ -27,7 +27,7 @@ const Navbar = ({ headerLogo, listLinks, bgText, portfolio, works, footerTitle }
             <div className="bg">
                 <div className="container bg__content">
                     <h3 className='bg__content-p'>{bgText?.title}</h3>
-                    <button className="bg__content-btn"><p className="bg__content-btn_p">{bgText?.desc}</p>
+                    <button className="bg__content-btn">{bgText?.desc}
                     </button>
                 </div>
             </div>

@@ -77,13 +77,18 @@
     padding: 10px 24px;
     border-radius: 10px;
     border: none;
-}
-
-.bg__content-btn_p {
+    transition: 0.3s;
     font-family: Arial;
     font-weight: 700;
     font-size: 35px;
     color: #000000;
+    transition: 0.3s;
+}
+
+
+.bg__content-btn:hover {
+    color: #FFFFFF;
+    background: #000000;
 }
 
 /* bg end */
