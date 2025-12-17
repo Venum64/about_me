@@ -1,5 +1,9 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Portfolio from './components/Portfolio'
+import Works from './components/Works'
+import Footer from './components/Footer'
 
 const App = () => {
   const [headerLogo, setHeaderLogo] = useState('proweb')
@@ -35,7 +39,13 @@ const App = () => {
 
   const [footerTitle, setFooterTitle] = useState('Связаться со мной')
   return (
-    <Navbar headerLogo={headerLogo} listLinks={listLinks} bgText={bgText} portfolio={portfolio} works={works} footerTitle={footerTitle}/>
+    <>
+      <Header headerLogo={headerLogo} listLinks={listLinks} />
+      <Hero bgText={bgText} />
+      <Portfolio portfolio={portfolio} />
+      <Works works={works} />
+      <Footer footerTitle={footerTitle} />
+    </>
   )
 }
 
